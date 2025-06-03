@@ -1,0 +1,136 @@
+ body {
+     font-family: Arial, sans-serif;
+     padding: 100px;
+
+ }
+
+
+ .form-section,
+ .preview-section {
+     height: 100%;
+ }
+
+ .form-section {
+     background: #F0FAFF;
+     padding: 95px 70px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+ }
+
+ .news-preview {
+     width: 100%;
+     background-color: #000033;
+     color: white;
+     padding: 50px 20px;
+     position: relative;
+     text-align: center;
+     border-radius: 10px;
+     min-height: 600px;
+ }
+
+ .news-preview img {
+     max-width: 100%;
+     border: 5px solid red;
+     max-height: 280px;
+     margin: auto;
+
+ }
+
+ .live-banner {
+     background-color: red;
+     color: white;
+     padding: 5px 10px;
+     position: absolute;
+     top: 20px;
+     left: 10px;
+     font-weight: bold;
+ }
+
+ .live-banner-right-text {
+     border: 1px solid #fff;
+     color: white;
+     padding: 6px 12px;
+     position: absolute;
+     top: 20px;
+     right: 10px;
+     font-size: 14px;
+     line-height: normal;
+     border-radius: 5px;
+     text-transform: capitalize;
+ }
+
+ .date-badge {
+     background-color: #ffd700;
+     padding: 6px 12px;
+     display: inline-block;
+     margin-top: 40px;
+     border-radius: 5px;
+     color: #000;
+ }
+
+ .footer-button {
+     background-color: #aa0000;
+     padding: 20px 0;
+     border-radius: 5px;
+     margin-top: 20px;
+     font-size: 20px;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     left: 0;
+     right: 0;
+ }
+
+ input[type="text"],
+ input[type="date"] {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+ }
+
+ .form-section input {
+     padding: 15px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+     margin-bottom: 30px;
+ }
+
+ .form-section input#imageInput {
+     background: #ffffff;
+ }
+
+ .form-section label {
+     font-size: 18px;
+     line-height: normal;
+     margin-bottom: 10px;
+     display: inline-block;
+ }
+
+ .form-section button {
+     padding: 14px 30px;
+     background: red;
+     border: none;
+     color: #fff;
+     border-radius: 10px;
+ }
+
+ #dateOutput.hidden {
+     display: none;
+ }
+
+ .live-banner-content-title {
+     margin-top: 15px;
+ }
+
+ @media (max-width: 1449px) {
+     .form-section {
+         padding: 80px 50px;
+
+     }
+ }
+
+ @media (max-width: 1199px) {
+     .news-preview-wrapper .row {
+         gap: 30px;
+     }
+ }

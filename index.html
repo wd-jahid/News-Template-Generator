@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>News Template Generator</title>
+    <!-- html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="news-preview-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="form-section">
+                        <label>Date(Date will be here automatically)</label>
+                        <input type="date" id="date">
+
+                        <label>Headline:</label>
+                        <input type="text" id="headline" placeholder="Enter headline">
+
+                        <label>Featured Image</label>
+                        <input type="file" id="imageInput" accept="image/*">
+                        <br><br>
+                        <button onclick="generateNews()">Generate Image</button>
+                        <button onclick="downloadPreviewImage()">Download Image</button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="preview-section">
+                        <div class="news-preview" id="newsPreview">
+                            <div class="live-banner">LIVE NEWS</div>
+                            <div class="live-banner-right-text">Stay tuned for the latest news.</div>
+                            <div class="date-badge hidden" id="dateOutput"></div>
+                            <br><br>
+                            <img id="previewImage" src="" alt="Preview Image" style="display:none">
+                            <h2 class="live-banner-content-title" id="headlineOutput"></h2>
+                            <div class="footer-button">Details in the comments.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
