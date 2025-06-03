@@ -135,7 +135,7 @@
      }
  }
  @media (max-width: 991px) {
-     .body {
+     body {
          padding: 0px;
      }
  }
