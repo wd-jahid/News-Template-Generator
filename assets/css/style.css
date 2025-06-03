@@ -134,3 +134,8 @@
          gap: 30px;
      }
  }
+ @media (max-width: 991px) {
+     .body {
+         padding: 0px;
+     }
+ }
